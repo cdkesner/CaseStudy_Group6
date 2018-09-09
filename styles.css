@@ -1,0 +1,46 @@
+/* Nav bar styles*/
+.topnav	{
+	overflow: hidden;
+	text-align: center;
+	font-size: 1.2em;
+}
+li{
+	display: inline;
+}
+li:last-child {
+	border-right: none;*/
+}
+a:link {
+	font-family: Georgia, serif;
+	color: #BE9EC9;
+	text-decoration: none;
+}
+a:visited {
+	color:#c8add1;
+}
+a:active {
+	text-decoration: underline;
+}
+a:hover {
+	color: #000099;
+	background-color: transparent;
+}
+
+/*Body*/
+h1 {
+	text-align: center;
+	color: #F1EA7F
+}
+body {
+    background-image: url("images/oceanBackground.jpg");
+}
+h1.title {
+	font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
