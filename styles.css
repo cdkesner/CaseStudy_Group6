@@ -12,11 +12,11 @@ li:last-child {
 }
 a:link {
 	font-family: Georgia, serif;
-	color: #BE9EC9;
+	color: #F1EA7F;
 	text-decoration: none;
 }
 a:visited {
-	color:#c8add1;
+	color:#F1EA7F;
 }
 a:active {
 	text-decoration: underline;
@@ -29,7 +29,7 @@ a:hover {
 /*Body*/
 h1 {
 	text-align: center;
-	color: #F1EA7F
+	color: #FFA500
 }
 body {
     background-image: url("images/oceanBackground.jpg");
@@ -38,6 +38,22 @@ h1.title {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 2.7em;
 	text-align: center;
+}
+p.testimonials{
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	padding-bottom: 25px;
+}
+#testimonials{
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	color: #4b0066;
 }
 h3 {
 	text-align: center;
