@@ -27,6 +27,16 @@ a:hover {
 }
 
 /*Body*/
+.Pic1 {
+width: 45%;
+float: left;
+margin: 20px;
+}
+.Pic2 {
+width: 45%;
+float: right;
+margin: 20px;
+}
 h1 {
 	text-align: center;
 	color: #FFA500
