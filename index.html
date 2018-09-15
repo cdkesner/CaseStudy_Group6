@@ -44,38 +44,7 @@
 	
 	
 	
-	<article>
-      <h2>We Would Love To Hear From You!</h2>
-      <form>
-        <fieldset id="contactinfo">
-          <label for="nameinput">
-            Name
-            <input type="text" id="nameinput" name="name" />
-          </label>
-          <label for="emailinput">
-            Email
-            <input type="text" id="emailinput" name="email" />
-          </label>
-          <label for="comments">
-            Comments
-		  <textarea id="comments" name="comments"></textarea>
-          </label>
-        </fieldset>
-        <fieldset id="submitbutton">
-          <input type="button" id="submit" value="Submit" />
-        </fieldset>
-     </form>
-   </article>
 	
-   <script>
-	function submitInfo() {
-		var name = document.getElementById("nameinput");
-		var email = document.getElementById("emailinput");
-		var comments = document.getElementById("comments");
-		(name.value && email.value && comments.value) ? alert("Thank you!") : alert("Please fill in all fields");
-	}
-	document.getElementById("submit").addEventListener("click", submitInfo, false);
-   </script>
 
 </body>
 </html>
