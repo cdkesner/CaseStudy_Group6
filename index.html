@@ -52,8 +52,8 @@
 		<textarea id="budget" name="budget"></textarea>
           </label>
         </fieldset>
-        <fieldset id="submitbutton">
-          <input type="button" id="submit" value="Submit" />
+        <fieldset id="submit">
+          <input type="button" id="submit" value="submit" />
         </fieldset>
      </form>
    </article>
@@ -62,7 +62,7 @@
 <script>
 	function budget() {
 		var budget = document.getElementById("budget");
-		(amount.value <=200) ? alert("Keep Saving! You are almost there!") : ("We can help you find the right vacation for you!");
+		(budget.value <=200) ? alert("Keep Saving! You are almost there!") : ("We can help you find the right vacation for you!");
 	}
 	document.getElementById("submit").addEventListener("click:, submitInfo, false);
 </script>
