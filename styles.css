@@ -28,13 +28,13 @@ a:hover {
 
 /*Body*/
 .Pic1 {
-width: 45%;
-float: left;
+width: 65%;
+clear: both;
 margin: 20px;
 }
 .Pic2 {
-width: 45%;
-float: right;
+width: 65%;
+clear: both;
 margin: 20px;
 }
 h1 {
