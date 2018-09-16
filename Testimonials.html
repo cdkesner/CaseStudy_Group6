@@ -35,9 +35,9 @@
 	id imperdiet.<br> - Arthur Wise -</p>
 	<p class="testimonials">Where have you been all my life Majestic Sands!  We will now always use Majestic Sands!Maecenas id magna a eros varius iaculis. Vestibulum at neque vitae est sollicitudin dignissim. 
 	Mauris dapibus cursus arcu. Cras malesuada elit leo, eu consequat odio venenatis a. Vestibulum posuere eleifend tellus eget euismod. Pellentesque id turpis orci.<br> - Kiara Strickland -</p>
-
+	<p class="testimonials" id="newComment"></p>
 <article>
-      <h2>We Would Love To Hear From You!</h2>
+      <h2>We Would Love To Hear From You! Tell us about your experience.</h2>
       <form>
         <fieldset id="contactinfo">
           <label for="nameinput">
@@ -64,8 +64,9 @@
 		var name = document.getElementById("nameinput");
 		var email = document.getElementById("emailinput");
 		var comments = document.getElementById("comments");
-		(name.value && email.value && comments.value) ? alert("Thank you!") : alert("Please fill in all fields");
+		(name.value && email.value && comments.value) ? alert("Thank you! We appreciate your feedback!") : alert("Please fill in all fields");
 	}
+	document.getElementById("newComment").innerHTML = comments.value;
 	document.getElementById("submit").addEventListener("click", submitInfo, false);
    </script>	
 	

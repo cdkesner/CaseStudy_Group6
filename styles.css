@@ -1,3 +1,8 @@
+/*Name:  	Curtis Kesner and Ashley Goins
+Class    	CIS-131.W01
+Date:			9-8-2018
+Assignment: CaseStudy Group6*/
+
 /* Nav bar styles*/
 .topnav	{
 	overflow: hidden;
@@ -8,7 +13,7 @@ li{
 	display: inline;
 }
 li:last-child {
-	border-right: none;*/
+	border-right: none;
 }
 a:link {
 	font-family: Georgia, serif;
@@ -22,24 +27,41 @@ a:active {
 	text-decoration: underline;
 }
 a:hover {
-	color: #a77cb6;
+	color: #7FFFD4;
 	background-color: transparent;
+	text-decoration: underline;
 }
-
+/*Links within Body*/
+.pageLinks a:link {
+	color: #006400;
+}
+.pageLinks a:hover {
+	color: #7FFFD4;
+	text-decoration: underline;
+}
 /*Body*/
-.Pic1 {
-width: 65%;
-clear: both;
-margin: 20px;
+/*#budget{
 }
-.Pic2 {
-width: 65%;
-clear: both;
-margin: 20px;
+#submit{
+}
+.readyForVacation {
+}*/
+.column {
+	float: left;
+	width: 48%;
+	padding: 5px;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 h1 {
 	text-align: center;
 	color: #FFA500
+}
+h3.#budget {
+	float: left;
 }
 body {
     background-image: url("images/oceanBackground.jpg");
@@ -49,13 +71,16 @@ h1.title {
 	font-size: 2.7em;
 	text-align: center;
 }
-
 p {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 	line-height: 1.5em;
 	font-size: 0.9em;
 	font-family: sans-serif;
 }
-
 p.testimonials{
 	text-align: center;
 	display: block;
@@ -79,7 +104,6 @@ h3 {
 	margin-right: auto;
 	width: 70%;
 }
-
 article {
 	clear: both;
 	display: block;

@@ -14,59 +14,41 @@
 	<link href="style.css" rel="stylesheet">
 	
 </head>
-<body>
-	<ul class ="topnav">
-		<li><a class="active" href="index.html" title="Home">Home</a>
-		<!--<li><a href="Packages.html" title="Packages">Packages</a>
-		<li><a href="WeddingPackages.html" title="WeddingPackages">Wedding Packages</a>-->
-		<li><a href="Testimonials.html" title="Testimonials">Testimonials</a>
-	</ul>
-	
-	<h1 class="title" title="Introduction">Majestic Sands Travel</h1>
-	<hr>
-	<h3></h3>
-	<p>Whether you want to relax with the sand and ocean surrounding you or you are looking for the
-	perfect wedding location, Majestic Sands Travel can make your dreams a reality. <br><br>
-	</p>
-	<p>Click on the links below to view each of our package options.</p><br>
-
-	<div class="Pic1">
-	<h2>Bahamas</h2>
-	<img src="images/Pic1.jpg" alt="" width="550" class="Pic1">
-	<li><a href="Packages.html" title="Packages">Packages</a></li>
-	</div>
-
-	<div class="Pic2">
-	<h2>Cruises</h2>
-	<img src="images/Pic2.jpg" alt="" width="550" class="Pic2">
-	<li><a href="Packages.html" title="Packages">Packages</a></li>
-	</div><br><br>
-	
-	
-	
-	
-<article>
-      <h2>What is your budget?</h2>
-         <label for="budget">
-       		Budget
-		<textarea id="budget" name="budget"></textarea>
-          </label>
-        </fieldset>
-        <fieldset id="submit">
-          <input type="button" id="submit" value="submit" />
-        </fieldset>
-     </form>
-   </article>
-	
-	
-<script>
-	function budget() {
-		var budget = document.getElementById("budget");
-		(budget.value <=200) ? alert("Keep Saving! You are almost there!") : ("We can help you find the right vacation for you!");
-	}
-	document.getElementById("submit").addEventListener("click:, submitInfo, false);
-</script>
-	
-
-</body>
+	<body>
+		<ul class ="topnav">
+			<li><a class="active" href="index.html" title="Home">Home</a>
+			<!--<li><a href="Packages.html" title="Packages">Packages</a>
+			<li><a href="WeddingPackages.html" title="WeddingPackages">Wedding Packages</a>-->
+			<li><a href="Testimonials.html" title="Testimonials">Testimonials</a>
+		</ul>		
+		<h1 class="title" title="Introduction">Majestic Sands Travel</h1>
+		<hr>
+		<p>Whether you want to relax with the sand and ocean surrounding you or you are looking for the
+		perfect wedding location, Majestic Sands Travel can make your dreams a reality.</p>
+		<br>
+		<article id="packageBudget">
+		<div class="readyForVacation">
+			<h3>Are you ready for a vacation? Please enter your budget?</h3>
+			<textarea id="budget" name="budget" placeholder="Enter your budget amount here"></textarea>
+			<button id="submit">Submit</button>
+		</div>
+		</article><br>
+		<div class="row">
+			<div class="column">
+				<h2 class="pageLinks"><a href="bahamasPackages.html" title="bahamasPackages">Bahamas</a></h2>
+				<img src="images/Pic1.jpg" alt="bahamas" style="width:100%"> <!--class="Pic1"-->
+			</div>
+			<div class="column">
+				<h2 class="pageLinks"><a href="cruisePackages.html" title="cruisePackages">Cruises</a></h2>
+				<img src="images/Pic2.jpg" alt="cruise's" style="width:100%"> <!--class="Pic2"*-->
+			</div>
+		</div><br><br>		
+		<script>
+			function budget() {
+				var budget = document.getElementById("budget");
+				(budget.value <=200) ? alert("Keep Saving! You are almost there!") : alert("Great! You qualify for a vacation. Please browse our current packages.");
+			}
+			document.getElementById("submit").addEventListener("click", budget, false);
+		</script>
+	</body>
 </html>
