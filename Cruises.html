@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+	<!--
+	Name:  	Curtis Kesner and Ashley Goins
+	Class    CIS-131.W01
+	Date:		9-23-2018
+	Assignment: CaseStudy Group6
+	-->
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>Cruises</title>
+	<script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+	<ul class ="topnav">
+		 <li><a href="index.html" title="Home">Home</a>
+		 <!--<li><a href="Packages.html" title="Packages">Packages</a>
+		 <li><a href="WeddingPackages.html" title="WeddingPackages">Wedding Packages</a>-->
+		 <li><a href="Testimonials.html" title="Testimonials">Testimonials</a>
+		 <li><a class="active" href="Cruises.html" title="Cruises">Cruises</a>
+	</ul>
+
+	<h1 class="title" title="Introduction">Majestic Sands Travel</h1>
+	<hr>
+	<h3 id="Cruises">Cruises</h3>	
+	<p>Bigger group = bigger discount</p>
+	<p>How many people are in your group?</p>
+	<textarea id="peopleInput" placeholder="# of people"></textarea>
+	<button id="submit" onclick="calculateDiscount()">Submit</button>
+	<script>
+		var groupDiscounts = ["You qualify for a complimentary bottle of champagne with your group size", "You qualify for a free massage with your group size", 
+		"You qualify for an additional 5% off of your cruise purchase", "You qualify for an additional 10% off of your cruise purchase"];
+		function calculateDiscount()
+			var numPeople = document.getElementById("peopleInput");
+			
+	</script>
+</body>
+</html>
