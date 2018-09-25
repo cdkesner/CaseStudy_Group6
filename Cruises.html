@@ -36,8 +36,18 @@
 			var numPeople = document.getElementById("peopleInput");
 			var groupOffer = document.getElementById("groupDiscounts");
 			for (i = 0; i <= numPeople; i++)
-					if (numPeople > 2)
+					if (numPeople > 8) {
+						groupOffer.innerHTML = (groupDiscountOffers[3]);
+					}
+					else if (numPeople > 6) {
+						groupOffer.innerHTML = (groupDiscountOffers[2]);
+					}
+					else if (numPeople > 4) {
+						groupOffer.innerHTML = (groupDiscountOffers[1]);
+					}
+					else if (numPeople > 2) {
 						groupOffer.innerHTML = (groupDiscountOffers[0]);
+					}
 		}
 	</script>
 </body>
