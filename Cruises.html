@@ -26,14 +26,19 @@
 	<h3 id="Cruises">Cruises</h3>	
 	<p>Bigger group = bigger discount</p>
 	<p>How many people are in your group?</p>
-	<textarea id="peopleInput" placeholder="# of people"></textarea>
+	<textarea id="peopleInput" placeholder="# of people up to 30"></textarea>
 	<button id="submit" onclick="calculateDiscount()">Submit</button>
+	<p id="groupDiscounts"></p>
 	<script>
-		var groupDiscounts = ["You qualify for a complimentary bottle of champagne with your group size", "You qualify for a free massage with your group size", 
-		"You qualify for an additional 5% off of your cruise purchase", "You qualify for an additional 10% off of your cruise purchase"];
-		function calculateDiscount()
+		var groupDiscountOffers = ["2+ people = You qualify for a complimentary bottle of champagne with your group size", "4+ people = You qualify for a free massage with your group size", 
+		"6+ people = You qualify for an additional 5% off of your cruise purchase", "8+ people = You qualify for an additional 10% off of your cruise purchase"];
+		function calculateDiscount() {
 			var numPeople = document.getElementById("peopleInput");
-			
+			var groupOffer = document.getElementById("groupDiscounts");
+			for (i = 0; i <= numPeople; i++)
+					if (numPeople > 2)
+						groupOffer.innerHTML = (groupDiscountOffers[0]);
+		}
 	</script>
 </body>
 </html>
